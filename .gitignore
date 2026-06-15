@@ -1,2 +1,13 @@
 .claude/
 .DS_Store
+
+# Secrets / credentials - never commit
+smb-pass
+windrose-server-name
+*-pass
+*-creds
+*-credentials
+*credentials*
+*.secret
+*.key
+*.pem

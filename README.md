@@ -259,7 +259,7 @@ for testing the new animation system with bots and friends.
 ```
 Friend connects via CS2 console
     │
-    ▼ connect <public-ip>:27015 (password: theranchero)
+    ▼ connect <public-ip>:27015 (password in gitignored cs2-pass)
 Port forwarding on Deco router
     │
     ▼ UDP/TCP 27015 → 192.168.68.60:27015
@@ -274,8 +274,8 @@ CS2 Dedicated Server (LXC 117)
 | Setting | Value |
 |---|---|
 | Server IP | `<public-ip>:27015` |
-| Server Password | `theranchero` |
-| RCON Password | `thehalford` |
+| Server Password | _redacted — see gitignored `cs2-pass`_ |
+| RCON Password | _redacted — see gitignored `cs2-pass`_ |
 | Game Mode | Casual (game_type 0, game_mode 0) |
 | Beta Branch | `animgraph_2_beta` |
 
