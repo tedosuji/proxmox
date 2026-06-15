@@ -20,7 +20,7 @@
 | 114 | proxy | .53 | Nginx Reverse Proxy |
 | 115 | webapps | .55 | Static Web Apps |
 | 116 | capitol-gains | .61 | Stock Trade Tracker (Docker) |
-| 117 | cs2 | .60 | CS2 Dedicated Server (AnimGraph2 Beta) |
+| 117 | cs2 | .60 | CS2 Dedicated Server (AnimGraph2 Beta) — **inactive** (service stopped + disabled) |
 | 118 | inventree | .64 | Parts Inventory (leverless controller business) |
 | 119 | windrose | .67 | Windrose Dedicated Server (**Windows 11 VM**, not LXC) |
 

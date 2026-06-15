@@ -252,6 +252,8 @@ http://gotify.home
 
 ### CS2 — Dedicated Game Server (LXC 117)
 
+> **Status: INACTIVE** — the `cs2` service is stopped and disabled (does not auto-start). Section kept for reference.
+
 **What it does**: Runs a Counter-Strike 2 dedicated server on the AnimGraph2 beta branch
 for testing the new animation system with bots and friends.
 
