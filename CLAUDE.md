@@ -32,6 +32,7 @@
 - **Windrose server**: SteamCMD app `4129620`, `login anonymous` (no account needed). Installed to `C:\Game_Servers\Windrose_Server`. First SteamCMD run only self-updates (exit 7) — **run it twice**. UE5 needs the bundled **VC++ redist** (`Engine\Extras\Redist\en-us\vc_redist.x64.exe`) or the exe dies with `0xC0000135` and no log.
 - Config: `R5\ServerDescription.json` (edit only while stopped). Direct-connect on **7777 TCP+UDP**, password-protected, 6 players. Server name/password/invite-code kept in gitignored `windrose-*` files.
 - Auto-start: Scheduled Task `WindroseServer` (SYSTEM, at boot). Nightly save backup task `WindroseSaveBackup` → `//192.168.68.58/scott/windrose-backups`. SSH firewall scoped to `192.168.68.0/22`; only 7777 open inbound.
+- **Player dashboard** at `windrose.home` (LAN-only): live crew + server settings. Parser `C:\ProgramData\windrose-web\parse-players.ps1` on the VM reads `R5.log` + the JSON configs → JSON; webapps LXC 115 pulls it every 60s via a **restricted forced-command SSH key** (`/root/.ssh/windrose_pull`, locked to only run the parser) → `/var/www/windrose`, fronted by proxy 114 + Pi-hole `windrose.home`→.53.
 
 ## Key Patterns
 - All containers on **vmbr0** bridge
