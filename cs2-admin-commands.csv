@@ -1,0 +1,52 @@
+Category,Command (console),Chat alias,Permission flag,Usage / notes
+Map & server,css_map,!map,@css/changemap,css_map de_dust2  (official map)
+Map & server,css_wsmap,!wsmap,@css/changemap,css_wsmap <workshop id or name>  (workshop map)
+Map & server,css_cvar,!cvar,@css/cvar,"css_cvar bot_quota 5   <- change bot count; css_cvar <cvar> <value>"
+Map & server,css_rcon,!rcon,@css/rcon,css_rcon <any server command>
+Map & server,css_rr,!rr,@css/generic,restart the current round
+Map & server,css_vote,!vote,@css/generic,css_vote <question> <option1> <option2> ...
+Players,css_players,!players,@css/generic,list connected players + their userids/steamids
+Players,css_who,!who,@css/generic,css_who <steamid or name>  (show admin/penalty info)
+Players,css_disconnected,!disconnected,@css/generic,list recently disconnected players
+Moderation,css_kick,!kick,@css/kick,css_kick <#userid or name> [reason]
+Moderation,css_slay,!slay,@css/slay,css_slay <#userid or name>
+Moderation,css_slap,!slap,@css/slay,css_slap <#userid or name> [damage]
+Moderation,css_team,!team,@css/kick,css_team <#userid or name> <ct|t|spec|swap>
+Moderation,css_rename,!rename,@css/generic,css_rename <#userid or name> <new name>
+Bans,css_ban,!ban,@css/ban,css_ban <#userid or name> [minutes / 0 = perm] [reason]
+Bans,css_addban,!addban,@css/ban,css_addban <steamid> [minutes / 0 = perm] [reason]
+Bans,css_banip,!banip,@css/ban,css_banip <ip> [minutes / 0 = perm] [reason]
+Bans,css_unban,!unban,@css/unban,css_unban <steamid or name or ip> [reason]
+Bans,css_reloadbans,!reloadbans,@css/generic,reload the ban list from storage
+Warnings,css_warn,!warn,@css/kick,css_warn <#userid or name> [reason]
+Warnings,css_unwarn,!unwarn,@css/kick,css_unwarn <steamid or name>
+Warnings,css_warns,!warns,@css/generic,css_warns <steamid or name>
+Comms,css_gag,!gag,@css/chat,"css_gag <#userid or name> [minutes / 0 = perm] [reason]  (block text chat)"
+Comms,css_mute,!mute,@css/chat,"css_mute <#userid or name> [minutes / 0 = perm] [reason]  (block voice)"
+Comms,css_silence,!silence,@css/chat,"css_silence <#userid or name> [minutes / 0 = perm] [reason]  (text+voice)"
+Comms,css_ungag,!ungag,@css/chat,css_ungag <steamid or name>
+Comms,css_unmute,!unmute,@css/chat,css_unmute <steamid or name>
+Comms,css_unsilence,!unsilence,@css/chat,css_unsilence <steamid or name>
+Comms,css_addgag,!addgag,@css/chat,css_addgag <steamid> [minutes / 0 = perm] [reason]
+Comms,css_addmute,!addmute,@css/chat,css_addmute <steamid> [minutes / 0 = perm] [reason]
+Comms,css_addsilence,!addsilence,@css/chat,css_addsilence <steamid> [minutes / 0 = perm] [reason]
+Messages,css_say,!say,@css/chat,css_say <message>  (broadcast to all chat)
+Messages,css_psay,!psay,@css/chat,css_psay <#userid or name> <message>  (private)
+Messages,css_csay,!csay,@css/chat,css_csay <message>  (center screen)
+Messages,css_hsay,!hsay,@css/chat,css_hsay <message>  (HUD)
+Messages,css_asay,!asay,@css/chat,css_asay <message>  (admins only)
+Admin menu,css_admin,!admin,(any admin),opens the admin menu (everything via menu)
+Admin menu,css_adminhelp,!adminhelp,(any admin),list available admin commands
+Admin mgmt,css_addadmin,!addadmin,@css/root,"css_addadmin <steamid> <name> <flags/group> [immunity] [minutes]"
+Admin mgmt,css_deladmin,!deladmin,@css/root,css_deladmin <steamid>
+Admin mgmt,css_addgroup,!addgroup,@css/root,css_addgroup <group> <flags> [immunity]
+Admin mgmt,css_delgroup,!delgroup,@css/root,css_delgroup <group>
+Admin mgmt,css_reloadadmins,!reloadadmins,@css/root,reload admins from storage
+Stealth,css_hide,!hide,@css/generic,toggle hiding yourself from other players
+Stealth,css_hidecomms,!hidecomms,(any admin),hide your admin comms
+Fun,css_hp,!hp,@css/slay,css_hp <#userid or name> <hp>
+Fun,css_speed,!speed,@css/slay,css_speed <#userid or name> <multiplier>
+Fun,css_gravity,!gravity,@css/slay,css_gravity <#userid or name> <multiplier>
+Fun,css_money,!money,@css/slay,css_money <#userid or name> <amount>
+Fun,css_give,!give,@css/cheats,css_give <#userid or name> <weapon>
+Fun,css_strip,!strip,@css/slay,css_strip <#userid or name>

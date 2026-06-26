@@ -1,0 +1,50 @@
+Command,Example,What it does
+css_map,css_map de_dust2,Change to an official map
+css_wsmap,css_wsmap 3070629314,Change to a workshop map by id
+css_cvar,css_cvar bot_quota 5,Set a server cvar (here: 5 bots)
+(game mode),css_cvar game_type 1; css_cvar game_mode 2; css_map de_dust2,"Switch mode = set game_type + game_mode then reload a map. Combos: Casual 0/0, Competitive 0/1, Wingman 0/2, ArmsRace 1/0, Demolition 1/1, Deathmatch 1/2"
+css_rcon,css_rcon mp_restartgame 1,Run any raw server command
+css_rr,css_rr,Restart the current round
+css_vote,css_vote "Next map?" de_inferno de_nuke,Start an in-game vote
+css_players,css_players,List players with their userids/steamids
+css_who,css_who Bob,Show admin/penalty info for a player
+css_disconnected,css_disconnected,List recently disconnected players
+css_kick,css_kick Bob being afk,Kick a player (with reason)
+css_slay,css_slay Bob,Kill a player instantly
+css_slap,css_slap Bob 25,Slap a player for 25 damage
+css_team,css_team Bob ct,Move a player to a team (ct/t/spec/swap)
+css_rename,css_rename Bob Cheater,Rename a player
+css_ban,css_ban Bob 60 trolling,Ban a connected player for 60 min (0 = permanent)
+css_addban,css_addban 76561198000000000 0 cheating,Ban by steamid (0 = permanent)
+css_banip,css_banip 203.0.113.10 1440 evading,Ban an ip for 1440 min (1 day)
+css_unban,css_unban 76561198000000000,Remove a ban by steamid/name/ip
+css_reloadbans,css_reloadbans,Reload the ban list from storage
+css_warn,css_warn Bob spamming,Issue a warning to a player
+css_unwarn,css_unwarn Bob,Remove a player's last warning
+css_warns,css_warns Bob,Show a player's warnings
+css_gag,css_gag Bob 30 spamming,Block a player's text chat for 30 min (0 = perm)
+css_mute,css_mute Bob 30 mic spam,Block a player's voice for 30 min (0 = perm)
+css_silence,css_silence Bob 30 toxic,Block text and voice for 30 min (0 = perm)
+css_ungag,css_ungag Bob,Remove a text-chat gag
+css_unmute,css_unmute Bob,Remove a voice mute
+css_unsilence,css_unsilence Bob,Remove a silence
+css_say,css_say Round starts in 10s,Broadcast a message to all chat
+css_psay,css_psay Bob check the rules,Send a private message to one player
+css_csay,css_csay GLHF,Center-screen message to all
+css_hsay,css_hsay Welcome,HUD message to all
+css_asay,css_asay watching slot 3,Message visible to admins only
+css_admin,css_admin,Open the admin menu
+css_adminhelp,css_adminhelp,List available admin commands
+css_addadmin,css_addadmin 76561198xxxxxxxxx Dave @css/changemap 50 0,"Add an admin: steamid name flag immunity time (0=perm)"
+css_deladmin,css_deladmin 76561198xxxxxxxxx,Remove an admin
+css_addgroup,css_addgroup #mods @css/kick 30,Create an admin group with flags
+css_delgroup,css_delgroup #mods,Delete an admin group
+css_reloadadmins,css_reloadadmins,Reload admins from storage after editing
+css_hide,css_hide,Toggle hiding yourself from the player list
+css_hidecomms,css_hidecomms,Hide your admin comms
+css_hp,css_hp Bob 200,Set a player's health
+css_speed,css_speed Bob 2,Set a player's speed multiplier
+css_gravity,css_gravity Bob 0.5,Set a player's gravity multiplier
+css_money,css_money Bob 16000,Set a player's money
+css_give,css_give Bob weapon_ak47,Give a player a weapon
+css_strip,css_strip Bob,Remove all of a player's weapons
